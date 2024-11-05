@@ -1,0 +1,144 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.dopefits.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_productPageFragment"
+            app:destination="@id/nav_product_page" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_virtualTryOnPageFragment"
+            app:destination="@id/virtualTryOnPageFragment" />
+
+    </fragment>
+
+
+    <!-- Add Yellow Hoodie Fragment destination -->
+    <fragment
+        android:id="@+id/yellowHoodieFragment"
+        android:name="com.example.dopefits.ui.productpage.YellowHoodieFragment"
+        android:label="Yellow Hoodie"
+        tools:layout="@layout/fragment_yellow_hoodie" />
+
+    <!-- Add Olive Green Tshirt Fragment destination -->
+    <fragment
+        android:id="@+id/oliveGreenTshirtFragment"
+        android:name="com.example.dopefits.ui.productpage.OliveGreenTshirtFragment"
+        android:label="Olive Green Tshirt"
+        tools:layout="@layout/fragment_olive_green_tshirt" />
+
+    <!-- Add Brown Sweatshirt Fragment destination -->
+    <fragment
+        android:id="@+id/brownSweatshirtFragment"
+        android:name="com.example.dopefits.ui.productpage.BrownSweatshirtFragment"
+        android:label="Brown Sweatshirt"
+        tools:layout="@layout/fragment_brown_sweatshirt" />
+
+    <!-- Add Varsity Jacket Fragment destination -->
+    <fragment
+        android:id="@+id/varsityJacketFragment"
+        android:name="com.example.dopefits.ui.productpage.VarsityJacketFragment"
+        android:label="Varsity Jacket"
+        tools:layout="@layout/fragment_varsity_jacket" />
+
+    <!-- Add Black Puffer Jacket Fragment destination -->
+    <fragment
+        android:id="@+id/blackPufferJacketFragment"
+        android:name="com.example.dopefits.ui.productpage.BlackPufferJacketFragment"
+        android:label="Black Puffer Jacket"
+        tools:layout="@layout/fragment_black_puffer_jacket" />
+
+    <!-- Add Virtual Try-On Fragment destination -->
+    <fragment
+        android:id="@+id/virtualTryOnPageFragment"
+        android:name="com.example.dopefits.ui.productpage.VirtualTryOnPageFragment"
+        android:label="fragment_virtual_try_on_page"
+        tools:layout="@layout/fragment_virtual_try_on_page" />
+
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.example.dopefits.ui.cart.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/action_cartFragment_to_productPageFragment"
+            app:destination="@id/nav_product_page" />
+        <action
+            android:id="@+id/action_cartFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_cartFragment_to_paymentOptionFragment"
+            app:destination="@id/paymentOptionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="com.example.dopefits.ui.orders.OrdersFragment"
+        android:label="Orders"
+        tools:layout="@layout/fragment_orders" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.dopefits.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_product_page"
+        android:name="com.example.dopefits.ui.productpage.ProductPageFragment"
+        android:label="Product Page"
+        tools:layout="@layout/fragment_product_page">
+
+        <argument
+            android:name="product"
+            app:argType="com.example.dopefits.model.Product" />
+        <!-- Action to navigate to Augmented Reality Fragment -->
+
+    </fragment>
+
+    <!-- Define Augmented Reality Fragment here -->
+    <fragment
+        android:id="@+id/nav_augmented_reality"
+        android:name="com.example.dopefits.ui.productpage.AugmentedRealityFragment"
+        android:label="Augmented Reality"
+        tools:layout="@layout/fragment_augmented_reality" />
+
+    <!-- Define Payment Fragment here -->
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.dopefits.ui.payment.PaymentFragment"
+        android:label="Payment"
+        tools:layout="@layout/fragment_payment">
+
+        <action
+            android:id="@+id/action_paymentFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+
+    </fragment>
+
+    <!-- Define Payment Option Fragment here -->
+    <fragment
+        android:id="@+id/paymentOptionFragment"
+        android:name="com.example.dopefits.ui.payment.PaymentOptionFragment"
+        android:label="Payment Option"
+        tools:layout="@layout/fragment_payment_option">
+
+        <action
+            android:id="@+id/action_paymentOptionFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+
+        <action
+            android:id="@+id/action_paymentOptionFragment_to_homeFragment"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+</navigation>

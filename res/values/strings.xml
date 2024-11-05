@@ -1,0 +1,57 @@
+<resources>
+    <!-- General Introduction Strings -->
+    <string name="app_name">DopeFits</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="main_logo_description">Main logo of the app</string>
+    <string name="intro_title">Welcome to DopeFits \n Elevate Your Wardrobe</string>
+    <string name="intro_description">DopeFits is a fashion app that helps you find the perfect outfit for any occasion. Whether you\'re going to a party, a job interview, or just hanging out with friends, DopeFits has you covered. With our easy-to-use interface and personalized recommendations, you\'ll never have to worry about what to wear again. So why wait? Download DopeFits today and start looking your best!</string>
+
+    <string name="intro_button">Get Started</string>
+    <string name="intro_skip">Skip</string>
+    <string name="intro_next">Next</string>
+    <string name="intro_back">Back</string>
+    <string name="intro_finish">Finish</string>
+
+    <string name="intro_slide_1_title">Find the Perfect Outfit</string>
+    <string name="intro_slide_1_description">DopeFits uses advanced algorithms to analyze your personal style and recommend outfits that are perfect for you. Whether you\'re looking for something casual, formal, or somewhere in between, DopeFits has you covered.</string>
+    <string name="don_t_have_an_account">Don’t have an account?</string>
+    <string name="intro_bottom_description">An Android Mobile Ordering Management System\nEmbedded with Augmented Reality for DopefitsPH</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="orders">Orders</string>
+    <string name="profile">Profile</string>
+    <string name="facebook">Facebook</string>
+    <string name="instagram">Instagram</string>
+    <string name="products">Products</string>
+    <string name="logout">Logout</string>
+    <string name="about_dopefits">About Dopefits</string>
+    <string name="data_policy">Data Policy</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="cart_fragment">Cart Fragment</string>
+    <string name="orders_fragment">Orders Fragment</string>
+    <string name="profile_fragment">Profile Fragment</string>
+
+
+    <string name="register_title">Register</string>
+    <string name="back">Back</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="full_name">Full Name</string>
+    <string name="username">Username</string>
+    <string name="product_image">Image Placeholder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_description">Image Description</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="product_thumbnail">Product Thumbnail</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="given_name">First Name</string>
+    <string name="surname">Surname</string>
+    <string name="address">Address</string>
+
+</resources>
